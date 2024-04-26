@@ -96,10 +96,6 @@ int main(int argc, char *argv[])
 
   pcl::PCDWriter writer;
 
-  // downsamplePointCloud(original_cloud, 0.4);
-  // std::cout << "Downsample generated" << std::endl;
-  // writer.write<pcl::PointXYZ>("downsample.pcd", *original_cloud, false);
-
   pcl::PointCloud<pcl::PointXYZ>::Ptr ground = segmentGroundPlane(original_cloud);
   std::cout << "Ground plane extracted" << std::endl;
   // writer.write<pcl::PointXYZ>("plane.pcd", *ground, false);
