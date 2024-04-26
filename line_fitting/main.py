@@ -224,7 +224,6 @@ def fit_and_categorize_lines(lines_models, lines_points, lines_labels):
         
     return all_fitted_lines
 
-
 def main():
     with open('segmentation/data.pkl', 'rb') as f:
         lines_models, lines_points, lines_labels = pickle.load(f)
